@@ -30,6 +30,12 @@ body{
 a>img{
     margin:2px;
 }
+.facebook, .github, .twitter{
+    transition:transform 0.2s;
+}
+.facebook:hover, .github:hover, .twitter:hover{
+    transform:scale(1.3,1.3)
+}
 .container{
     display:flex;
     flex-direction: column;
@@ -37,44 +43,46 @@ a>img{
     width:60vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
-.inner-container:first-child {
-    display:flex;
-    justify-content: space-evenly;
-    padding:8vh 4vw 8vh 2vw;
+.inner-container-1{
+    display:grid;
+    grid-auto-flow: column;
+    gap: 1.5em;
     background-color:#a12235;
 }
-.profile-photo img{
-    border-radius: 5px;
+.hide-inner-container{
+    display:none;
+
 }
-.profile-photo img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.profile-photo{
+    background-image: url("photo.jpg");
+    background-size: cover;
+    width:15vw;
+    height:auto;
 }
 .about-description{
-    width:40%;
+    display:flex;
+    flex-direction: column;
+    grid-template-rows: 1fr 1fr 2fr;
+    margin:5vh 0 5vh 0;
 }
 .name{
-    font-family: 'Ubuntu', sans-serif;
     font-weight:900;
-    font-size:2.2em;
+    font-size:2.5vw;
 }
 .role{
-    font-size:1.2em;
+    font-size:1.4vw;
 }
 .description{
-    margin-top:10px;
-    font-size:1em; 
+    font-size:1.1vw; 
+    text-align: justify;
+    margin-top:1.5vh;
 }
 .details-container{
-    font-size:small;
-    margin-top:15px;
+    font-size:1.1vw; 
     border-left:1px solid rgb(202, 200, 200);
+    margin:auto 0 auto 0;
 }
-table ,tr,td{
-    margin:10px;
-}
-td{
-    padding-top:20px;
-}
+
 td> label{
     font-weight: bold;
 }
@@ -105,9 +113,11 @@ background-color: rgb(223, 225, 226);
     width:4vw;
     height:8vh;
 }
-.profile{
-    position:relative;
+.link{
     margin-top:-8px;
     background-color: rgb(229, 233, 235);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+/*div{border:1px solid black;}*/
