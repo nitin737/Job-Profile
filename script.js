@@ -2,6 +2,7 @@ window.addEventListener('load', function () {
     const list='.profile,.resume,.contact';
     const fic=document.querySelector('.inner-container-1');
     const revealResume=document.querySelector('.hide-resume');
+    
     window.addEventListener('click',(e)=>{
         let text=e.path[3].innerText.toString();
         
