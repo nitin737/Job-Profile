@@ -44,8 +44,7 @@ a>img{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 .inner-container-1{
-    display:grid;
-    grid-auto-flow: column;
+    display:flex;
     gap: 1.5em;
     background-color:#a12235;
 }
@@ -56,7 +55,7 @@ a>img{
 .profile-photo{
     background-image: url("icons/photo.jpg");
     background-size: cover;
-    width:15vw;
+    width:100%;
     height:auto;
 }
 .about-description{
@@ -93,13 +92,13 @@ td a{
 
 .inner-container:nth-child(2){
 display:flex;
-color:#a12235;
+color:#bebebe;
 text-align: center;
 justify-content: space-around;
 background-color: rgb(224, 224, 224);
 }
 .inner-container:nth-child(2)>div{
-    padding:20px 30px 20px 30px;
+    padding:3vh 2vw 1vh 2vw;
     border-radius:3px;
 }
 .box{
@@ -140,6 +139,10 @@ background-color: rgb(224, 224, 224);
     flex-grow: 1;
     padding-left:5px;
 }
+.box1,.box2{
+    display:flex;
+    flex-direction: column;
+}
 .employment h2{
     margin-bottom:5px;
 }
@@ -147,44 +150,69 @@ background-color: rgb(224, 224, 224);
     border-top:2px solid rgb(129, 128, 128);
     margin-bottom: 20px;
 }
-.line::before{
-    border:2px solid red;
-}
-.company-name{
+.company-name,.college{
     font-size: medium;
     padding-left:3px;
 }
-.role-in-company{
+.role-in-company,.degree{
     padding-left:3px;
     margin:8px 0 8px 0;
     color:rgb(168, 167, 167)
 }
-.worked-on,p{
+.worked-on,p,.program{
     padding-left:3px;
     margin:0;
 }
+.worked-on p{
+    margin-top:5px;
+    text-align: justify;
+    color:rgb(128, 125, 125)
+}
+.experience,.year{
+    float:right;
+    color:rgba(37, 97, 187, 0.801);
+    font-size:0.9rem;
+}
 .worked-on>p::first-letter{
-    font-size: small;
-    font-weight: 1000;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+.dotted-line{
+    margin:20px 0 10px 0;
+    border-bottom: 1px dotted rgb(116, 113, 113);
 }
 .section-2{
     display:flex;
     flex-direction: column;
     flex-grow: 2;
 }
-.skill,.rating{
+.skill{
+    display:flex;
+    flex-direction: row;
     padding-top:2px;
     padding-bottom:2px;
+    margin-left:20px;
+}
+.rating{
+    
 }
 .rating span{
-    padding:0 3px 0 3px;
-    margin:0;
-    background-color: rgb(151, 148, 148);
+    display:flex;
+    flex-direction: row;
+}
+.rating span .circle{
+    height:12px;
+    width:12px;
+    margin-left:5px;
+    background-color: rgb(116, 114, 114);
     border-radius: 10px;
 }
 .programming{
     display:grid;
 }
-/*div{
-    margin:2px;
-    border:1px solid black;}
+.qualification{
+    display:flex;
+    flex-direction: column;
+}
+/*div{border:1px solid black;}*/
