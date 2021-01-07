@@ -189,13 +189,17 @@ background-color: rgb(224, 224, 224);
 }
 .skill{
     display:flex;
-    flex-direction: row;
+    flex-direction: ;
     padding-top:2px;
     padding-bottom:2px;
-    margin-left:20px;
+   margin-left:5px;
+}
+.prog{
+    width:9vw;
+    
 }
 .rating{
-    
+    margin:auto 0 auto 0;
 }
 .rating span{
     display:flex;
@@ -208,6 +212,13 @@ background-color: rgb(224, 224, 224);
     background-color: rgb(116, 114, 114);
     border-radius: 10px;
 }
+.circle-light{
+    height:12px;
+    width:12px;
+    margin-left:5px;
+    background-color: rgb(218, 214, 214);
+    border-radius: 10px;
+}
 .programming{
     display:grid;
 }
@@ -215,4 +226,3 @@ background-color: rgb(224, 224, 224);
     display:flex;
     flex-direction: column;
 }
-/*div{border:1px solid black;}*/
