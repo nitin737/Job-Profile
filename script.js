@@ -27,8 +27,8 @@ window.addEventListener('load', function () {
                 fic.classList.add('hide-inner-container');
                 fic.classList.remove('inner-container-1');
                 
-                revealResume.classList.remove('hide-resume');
                 revealResume.classList.add('reveal-resume');
+                revealResume.classList.remove('hide-resume');
             }
             
         }
