@@ -59,7 +59,7 @@ a>img{
     gap: 1.5em;
 }
 .profile-photo{
-    background-image: url("icons/photo.jpg");
+    background-image: url("icons/photo-min.jpg");
     background-size: cover;
     width:100%;
     height:auto;
