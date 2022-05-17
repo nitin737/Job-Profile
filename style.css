@@ -61,6 +61,7 @@ a>img{
 .profile-photo{
     background-image: url("icons/photo-min.jpg");
     background-size: cover;
+    width:30vw;
     height:auto;
 }
 .about-description{
